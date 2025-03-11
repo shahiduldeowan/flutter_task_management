@@ -14,14 +14,14 @@ extension ResponsiveExtension on num {
   /// proportional to the width of the screen.
   double get h => ((this * _width) / FigmaDesign.width.get);
 
-  /// Returns the width of an element based on the Figma design width.
+  /// Returns the font size based on the Figma design width.
   ///
-  /// The width is calculated by multiplying the current width of the screen
-  /// with the given [num] value and then dividing by the Figma design width.
+  /// The font size is calculated by multiplying the current width of the screen
+  /// with the given value and then dividing by the Figma design width.
   ///
-  /// This allows for responsive design, where the width of an element is
-  /// proportional to the width of the screen.
-  double get w => ((this * _width) / FigmaDesign.width.get);
+  /// This allows for responsive design, where the font size is proportional to the
+  /// width of the screen.
+  double get fs => (this * _width) / FigmaDesign.width.get;
 }
 
 extension AppSizeFormatExtension on double {
