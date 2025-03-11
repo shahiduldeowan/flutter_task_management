@@ -42,7 +42,7 @@ flutter_gen:
   fonts:
     enabled: true
     outputs:
-      class_name: AppFonts
+      class_name: FontFamily
   colors:
     enabled: true
     outputs:
