@@ -15,6 +15,9 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsSvgGen {
   const $AssetsSvgGen();
 
+  /// File path: assets/svg/bell_icon.svg
+  SvgGenImage get bellIcon => const SvgGenImage('assets/svg/bell_icon.svg');
+
   /// File path: assets/svg/calender_icon.svg
   SvgGenImage get calenderIcon =>
       const SvgGenImage('assets/svg/calender_icon.svg');
@@ -29,7 +32,8 @@ class $AssetsSvgGen {
   SvgGenImage get taskIcon => const SvgGenImage('assets/svg/task_icon.svg');
 
   /// List of all assets
-  List<SvgGenImage> get values => [calenderIcon, clockIcon, homeIcon, taskIcon];
+  List<SvgGenImage> get values =>
+      [bellIcon, calenderIcon, clockIcon, homeIcon, taskIcon];
 }
 
 class AppAssets {
