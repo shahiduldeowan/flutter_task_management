@@ -7,4 +7,7 @@
     <color name="onPrimaryColor">#0D101C</color>
     <color name="errorColor">#FF494C</color>
     <color name="greenColor">#009F76</color>
+    <color name="fontDarkColor">#0D101C</color>
+    <color name="fontSlateGray">#6E7591</color>
+    <color name="iconStoneGray">#93989D</color>
 </resources>
