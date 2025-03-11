@@ -1,0 +1,9 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    avoid_print: true
+    empty_statements: false
+    use_super_parameters: true
+    prefer_const_constructors: true
+    prefer_double_quotes: true

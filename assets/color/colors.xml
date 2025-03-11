@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#613BE7</color>
+    <color name="primaryContainerColor">#FFFFFF</color>
+    <color name="gradientRightColor">#DFE4F1</color>
+    <color name="onErrorColor">#6D7491</color>
+    <color name="onPrimaryColor">#0D101C</color>
+    <color name="errorColor">#FF494C</color>
+    <color name="greenColor">#009F76</color>
+</resources>

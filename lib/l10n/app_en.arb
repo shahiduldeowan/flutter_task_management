@@ -1,0 +1,33 @@
+{
+    "@@author": "Shahidul Deowan",
+    "@@locale": "en",
+    "@@context": "translation",
+    "language": "English",
+    "@language": {
+        "description": "The current language of the app."
+    },
+    "appName": "Task Management",
+    "@appName": {
+        "description": "The name of the app."
+    },
+    "goodMorning": "Good morning Liam!",
+    "@goodMorning": {
+        "description": "Greeting message for the user."
+    },
+    "summary": "Summary",
+    "@summary": {
+        "description": "Summary label."
+    },
+    "assignedTasks": "Assigned Tasks",
+    "@assignedTasks": {
+        "description": "Assigned tasks label."
+    },
+    "completedTasks": "Completed Tasks",
+    "@completedTasks": {
+        "description": "Completed tasks label."
+    },
+    "todayTasks": "Today tasks",
+    "@todayTasks": {
+        "description": "Today tasks label."
+    }
+}
