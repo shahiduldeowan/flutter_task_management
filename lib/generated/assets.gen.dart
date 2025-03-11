@@ -15,11 +15,21 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsSvgGen {
   const $AssetsSvgGen();
 
+  /// File path: assets/svg/calender_icon.svg
+  SvgGenImage get calenderIcon =>
+      const SvgGenImage('assets/svg/calender_icon.svg');
+
+  /// File path: assets/svg/clock_icon.svg
+  SvgGenImage get clockIcon => const SvgGenImage('assets/svg/clock_icon.svg');
+
   /// File path: assets/svg/home_icon.svg
   SvgGenImage get homeIcon => const SvgGenImage('assets/svg/home_icon.svg');
 
+  /// File path: assets/svg/task_icon.svg
+  SvgGenImage get taskIcon => const SvgGenImage('assets/svg/task_icon.svg');
+
   /// List of all assets
-  List<SvgGenImage> get values => [homeIcon];
+  List<SvgGenImage> get values => [calenderIcon, clockIcon, homeIcon, taskIcon];
 }
 
 class AppAssets {
