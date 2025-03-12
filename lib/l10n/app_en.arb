@@ -29,5 +29,21 @@
     "todayTasks": "Today tasks",
     "@todayTasks": {
         "description": "Today tasks label."
+    },
+    "areYouSure": "Are you sure?",
+    "@areYouSure": {
+        "description": "Confirmation message."
+    },
+    "areYouSureYouWantToExit": "Are you sure you want to exit?",
+    "@areYouSureYouWantToExit": {
+        "description": "Exit confirmation message."
+    },
+    "yes": "Yes",
+    "@yes": {
+        "description": "Yes button label."
+    },
+    "no": "No",
+    "@no": {
+        "description": "No button label."
     }
 }

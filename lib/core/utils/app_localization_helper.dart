@@ -14,6 +14,11 @@ extension AppLocalizationHelperExt on String {
       "assignedTasks" => localization?.assignedTasks ?? this,
       "completedTasks" => localization?.completedTasks ?? this,
       "todayTasks" => localization?.todayTasks ?? this,
+      "areYouSure" => localization?.areYouSure ?? this,
+      "areYouSureYouWantToExit" =>
+        localization?.areYouSureYouWantToExit ?? this,
+      "yes" => localization?.yes ?? this,
+      "no" => localization?.no ?? this,
       _ => this,
     };
   }
