@@ -28,6 +28,9 @@ class AppColors {
   /// Color: #009F76
   static const Color greenColor = Color(0xFF009F76);
 
+  /// Color: #F0F2F8
+  static const Color iceGray = Color(0xFFF0F2F8);
+
   /// Color: #93989D
   static const Color iconStoneGray = Color(0xFF93989D);
 

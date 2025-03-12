@@ -18,6 +18,10 @@ class $AssetsSvgGen {
   /// File path: assets/svg/bell_icon.svg
   SvgGenImage get bellIcon => const SvgGenImage('assets/svg/bell_icon.svg');
 
+  /// File path: assets/svg/calender_filled_icon.svg
+  SvgGenImage get calenderFilledIcon =>
+      const SvgGenImage('assets/svg/calender_filled_icon.svg');
+
   /// File path: assets/svg/calender_icon.svg
   SvgGenImage get calenderIcon =>
       const SvgGenImage('assets/svg/calender_icon.svg');
@@ -25,15 +29,31 @@ class $AssetsSvgGen {
   /// File path: assets/svg/clock_icon.svg
   SvgGenImage get clockIcon => const SvgGenImage('assets/svg/clock_icon.svg');
 
+  /// File path: assets/svg/home_filled_icon.svg
+  SvgGenImage get homeFilledIcon =>
+      const SvgGenImage('assets/svg/home_filled_icon.svg');
+
   /// File path: assets/svg/home_icon.svg
   SvgGenImage get homeIcon => const SvgGenImage('assets/svg/home_icon.svg');
 
   /// File path: assets/svg/task_icon.svg
   SvgGenImage get taskIcon => const SvgGenImage('assets/svg/task_icon.svg');
 
+  /// File path: assets/svg/task_icon_filled.svg
+  SvgGenImage get taskIconFilled =>
+      const SvgGenImage('assets/svg/task_icon_filled.svg');
+
   /// List of all assets
-  List<SvgGenImage> get values =>
-      [bellIcon, calenderIcon, clockIcon, homeIcon, taskIcon];
+  List<SvgGenImage> get values => [
+        bellIcon,
+        calenderFilledIcon,
+        calenderIcon,
+        clockIcon,
+        homeFilledIcon,
+        homeIcon,
+        taskIcon,
+        taskIconFilled
+      ];
 }
 
 class AppAssets {
