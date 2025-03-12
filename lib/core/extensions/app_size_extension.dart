@@ -1,3 +1,4 @@
+import "package:flutter/material.dart";
 import "package:task/core/utils/app_size_utils.dart";
 
 /// Extension on [num] to provide responsive design utilities.
@@ -46,5 +47,18 @@ extension AppSizeFormatExtension on double {
   /// calculating a layout ratio.
   double isNonZero({num defaultValue = 0.0}) {
     return this > 0.0 ? this : defaultValue.toDouble();
+  }
+
+  /// Returns a [SizedBox] widget with the given height.
+  ///
+  /// This is useful when you want to create a box with a specific height, such
+  /// as when creating a divider or a spacer.
+  ///
+  /// Example:
+  ///
+  ///     double height = 10.0;
+  ///     SizedBox box = height.toHeightBox();
+  SizedBox toHeightBox() {
+    return SizedBox(height: this);
   }
 }
