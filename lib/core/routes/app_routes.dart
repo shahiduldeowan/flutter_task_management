@@ -1,5 +1,5 @@
 import "package:flutter/material.dart";
-import "package:task/presentation/main/main_page.dart";
+import "package:task/presentation/pages/main_page.dart";
 
 class AppRoutes {
   AppRoutes._();
