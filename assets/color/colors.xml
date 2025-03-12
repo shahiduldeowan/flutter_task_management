@@ -10,4 +10,5 @@
     <color name="fontDarkColor">#0D101C</color>
     <color name="fontSlateGray">#6E7591</color>
     <color name="iconStoneGray">#93989D</color>
+    <color name="iceGray">#F0F2F8</color>
 </resources>
