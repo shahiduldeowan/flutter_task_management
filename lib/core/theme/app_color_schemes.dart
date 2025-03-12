@@ -20,4 +20,6 @@ class LightCodeColors {
   Color get green => AppColors.greenColor;
 
   Color get error => AppColors.errorColor;
+
+  Color get iceGray => AppColors.iceGray;
 }
