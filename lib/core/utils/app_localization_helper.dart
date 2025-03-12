@@ -19,6 +19,8 @@ extension AppLocalizationHelperExt on String {
         localization?.areYouSureYouWantToExit ?? this,
       "yes" => localization?.yes ?? this,
       "no" => localization?.no ?? this,
+      "allTasks" => localization?.allTasks ?? this,
+      "completed" => localization?.completed ?? this,
       _ => this,
     };
   }

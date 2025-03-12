@@ -45,5 +45,13 @@
     "no": "No",
     "@no": {
         "description": "No button label."
+    },
+    "allTasks": "All tasks",
+    "@allTasks": {
+        "description": "All tasks label."
+    },
+    "completed": "Completed",
+    "@completed": {
+        "description": "Completed label."
     }
 }

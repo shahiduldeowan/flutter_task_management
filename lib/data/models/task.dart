@@ -42,4 +42,15 @@ class TaskModel {
       isCompleted: entity.isCompleted,
     );
   }
+
+  TaskEntity toEntity() {
+    return TaskEntity.id(
+      id: id,
+      title: title,
+      description: description,
+      startDate: startDate,
+      endDate: endDate,
+      isCompleted: isCompleted,
+    );
+  }
 }

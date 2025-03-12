@@ -18,7 +18,7 @@ class AppTextThemes {
           fontWeight: FontWeight.w500,
         ),
         bodySmall: TextStyle(
-          color: appTheme.darkBlack,
+          color: appTheme.slateGray,
           fontSize: 12.fs,
           fontFamily: FontFamily.poppins,
           fontWeight: FontWeight.w400,
@@ -63,7 +63,7 @@ class AppTextThemes {
           color: appTheme.darkBlack,
           fontSize: 20.fs,
           fontFamily: FontFamily.poppins,
-          fontWeight: FontWeight.w700,
+          fontWeight: FontWeight.w500,
         ),
         titleMedium: TextStyle(
           color: appTheme.darkBlack,

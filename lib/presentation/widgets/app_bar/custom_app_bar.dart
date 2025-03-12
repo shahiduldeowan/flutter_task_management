@@ -7,7 +7,7 @@ class CustomAppBarWidget extends StatelessWidget
   const CustomAppBarWidget({
     super.key,
     this.height,
-    required this.shape,
+    this.shape,
     this.leadingWidth,
     this.leading,
     this.actions,
@@ -16,7 +16,7 @@ class CustomAppBarWidget extends StatelessWidget
   });
 
   final double? height;
-  final ShapeBorder shape;
+  final ShapeBorder? shape;
   final double? leadingWidth;
   final Widget? leading;
   final List<Widget>? actions;

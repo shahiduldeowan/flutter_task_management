@@ -30,8 +30,8 @@ class MainPage extends StatelessWidget {
         extendBody: true,
         extendBodyBehindAppBar: true,
         body: Container(
-          width: double.maxFinite,
-          height: MediaQuery.of(context).size.height,
+          width: double.infinity,
+          height: double.infinity,
           decoration: AppDecoration.gradientBackground,
           child: BlocBuilder<NavigationCubit, NavigationState>(
             builder: (context, state) {
