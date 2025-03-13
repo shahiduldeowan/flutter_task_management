@@ -17,7 +17,6 @@ import 'package:task/domain/use_case/add_task.dart' as _i1020;
 import 'package:task/domain/use_case/delete_task.dart' as _i138;
 import 'package:task/domain/use_case/get_all_task.dart' as _i271;
 import 'package:task/domain/use_case/update_task.dart' as _i527;
-import 'package:task/presentation/cubits/home/home_tab_cubit.dart' as _i873;
 import 'package:task/presentation/cubits/navigation/navigation_cubit.dart'
     as _i32;
 import 'package:task/presentation/cubits/task/task_add_cubit.dart' as _i1048;
@@ -36,7 +35,6 @@ extension GetItInjectableX on _i174.GetIt {
       environment,
       environmentFilter,
     );
-    gh.factory<_i873.HomeTabCubit>(() => _i873.HomeTabCubit());
     gh.factory<_i32.NavigationCubit>(() => _i32.NavigationCubit());
     gh.lazySingleton<_i927.TaskLocalDataSource>(
         () => _i927.TaskLocalDataSourceImpl());
