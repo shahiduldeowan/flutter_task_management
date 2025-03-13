@@ -24,7 +24,7 @@ class App extends StatelessWidget {
               create: (navigatorContext) => sl<NavigationCubit>(),
             ),
             BlocProvider<TaskListCubit>(
-              create: (tasklistContext) => sl<TaskListCubit>(),
+              create: (tasklistContext) => sl<TaskListCubit>()..getTasks(),
             ),
           ],
           child: MaterialApp(
