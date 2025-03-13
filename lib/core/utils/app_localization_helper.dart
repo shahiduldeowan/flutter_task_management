@@ -24,8 +24,8 @@ extension AppLocalizationHelperExt on String {
       "taskAddedSuccessfully" => localization?.taskAddedSuccessfully ?? this,
       "taskUpdatedSuccessfully" =>
         localization?.taskUpdatedSuccessfully ?? this,
-      // "taskDeletedSuccessfully" =>
-      //   localization?.taskDeletedSuccessfully ?? this,
+      "taskDeletedSuccessfully" =>
+        localization?.taskDeletedSuccessfully ?? this,
       _ => this,
     };
   }
