@@ -6,8 +6,8 @@ import "package:flutter_bloc/flutter_bloc.dart";
 import "package:task/core/theme/app_decoration.dart";
 import "package:task/core/utils/app_localization_helper.dart";
 import "package:task/presentation/all_task/all_task_page.dart";
-import "package:task/presentation/create_new_task/create_new_task_page.dart";
 import "package:task/presentation/cubits/navigation/navigation_cubit.dart";
+import "package:task/presentation/pages/create_new_task_page.dart";
 import "package:task/presentation/pages/home_page.dart";
 import "package:task/presentation/widgets/main/bottom_nav_bar.dart";
 
