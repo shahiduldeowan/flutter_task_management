@@ -15,7 +15,7 @@ class AppDecoration {
         ),
       );
 
-  static BoxDecoration get tabBoxDecoration => BoxDecoration(
+  static BoxDecoration get outlinedGrayBoxDecoration => BoxDecoration(
         color: theme.colorScheme.primaryContainer,
         borderRadius: BorderRadiusStyles.roundedBorder20,
         border: Border.all(
@@ -25,7 +25,7 @@ class AppDecoration {
       );
 
   static BoxDecoration get primary50 => BoxDecoration(
-        color: const Color(0xFFEEEFFF),
+        color: const Color(0xFFF0EDFD),
         border: Border.all(
           color: theme.colorScheme.primary,
           width: 1.h,
