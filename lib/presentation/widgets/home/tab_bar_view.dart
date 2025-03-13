@@ -1,5 +1,7 @@
 import "package:flutter/material.dart";
 import "package:task/core/extensions/app_size_extension.dart";
+import "package:task/presentation/widgets/home/build_all_tasks.dart";
+import "package:task/presentation/widgets/home/build_completed_tasks.dart";
 
 class TabBarViewWidget extends StatelessWidget {
   const TabBarViewWidget({super.key, required this.controller});
@@ -12,20 +14,7 @@ class TabBarViewWidget extends StatelessWidget {
       height: 446.h,
       child: TabBarView(
         controller: controller,
-        children: [
-          Container(
-            color: Colors.red,
-            child: const Center(
-              child: Text("All Tasks"),
-            ),
-          ),
-          Container(
-            color: Colors.green,
-            child: const Center(
-              child: Text("Completed Tasks"),
-            ),
-          ),
-        ],
+        children: const [BuildAllTasksWidget(), BuildCompletedTasksWidget()],
       ),
     );
   }
