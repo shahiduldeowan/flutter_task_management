@@ -21,6 +21,11 @@ extension AppLocalizationHelperExt on String {
       "no" => localization?.no ?? this,
       "allTasks" => localization?.allTasks ?? this,
       "completed" => localization?.completed ?? this,
+      "taskAddedSuccessfully" => localization?.taskAddedSuccessfully ?? this,
+      "taskUpdatedSuccessfully" =>
+        localization?.taskUpdatedSuccessfully ?? this,
+      // "taskDeletedSuccessfully" =>
+      //   localization?.taskDeletedSuccessfully ?? this,
       _ => this,
     };
   }
