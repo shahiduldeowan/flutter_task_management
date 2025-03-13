@@ -1,10 +1,8 @@
 import "package:flutter/material.dart";
-import "package:flutter_bloc/flutter_bloc.dart";
 import "package:task/core/extensions/app_size_extension.dart";
 import "package:task/core/theme/app_decoration.dart";
 import "package:task/core/theme/theme_helper.dart";
 import "package:task/core/utils/app_localization_helper.dart";
-import "package:task/presentation/cubits/home/home_tab_cubit.dart";
 
 class AnimatedTabBarWidget extends StatelessWidget {
   const AnimatedTabBarWidget({super.key, required this.controller});
@@ -37,9 +35,7 @@ class AnimatedTabBarWidget extends StatelessWidget {
           ),
           indicatorSize: TabBarIndicatorSize.label,
           dividerColor: Colors.transparent,
-          onTap: (index) {
-            context.read<HomeTabCubit>().onTabChanged(index);
-          },
+          onTap: (index) {},
           tabs: List.generate(
             2,
             (index) {
