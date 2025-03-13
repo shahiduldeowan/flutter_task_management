@@ -65,5 +65,9 @@
     "taskDeletedSuccessfully": "Task deleted successfully",
     "@taskDeletedSuccessfully": {
         "description": "Task deleted successfully message."
+    },
+    "exit": "Exit",
+    "@exit": {
+        "description": "Exit button label."
     }
 }
