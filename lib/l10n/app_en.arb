@@ -53,5 +53,17 @@
     "completed": "Completed",
     "@completed": {
         "description": "Completed label."
+    },
+    "taskAddedSuccessfully": "Task added successfully",
+    "@taskAddedSuccessfully": {
+        "description": "Task added successfully message."
+    },
+    "taskUpdatedSuccessfully": "Task updated successfully",
+    "@taskUpdatedSuccessfully": {
+        "description": "Task updated successfully message."
+    },
+    "taskDeletedSuccessfully": "Task deleted successfully",
+    "@taskDeletedSuccessfully": {
+        "description": "Task deleted successfully message."
     }
 }
