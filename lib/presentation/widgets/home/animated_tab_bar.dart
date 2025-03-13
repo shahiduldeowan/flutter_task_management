@@ -15,7 +15,7 @@ class AnimatedTabBarWidget extends StatelessWidget {
       width: double.maxFinite,
       height: 40.h,
       padding: EdgeInsets.all(6.h),
-      decoration: AppDecoration.tabBoxDecoration,
+      decoration: AppDecoration.outlinedGrayBoxDecoration,
       child: ClipRRect(
         borderRadius: BorderRadiusStyles.roundedBorder20,
         child: TabBar(
