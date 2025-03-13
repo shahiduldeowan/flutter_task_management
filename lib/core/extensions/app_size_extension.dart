@@ -61,4 +61,17 @@ extension AppSizeFormatExtension on double {
   SizedBox toHeightBox() {
     return SizedBox(height: this);
   }
+
+  /// Returns a [SizedBox] widget with the given width.
+  ///
+  /// This is useful when you want to create a box with a specific width, such
+  /// as when creating a column or a row.
+  ///
+  /// Example:
+  ///
+  ///     double width = 10.0;
+  ///     SizedBox box = width.toWidthBox();
+  SizedBox toWidthBox() {
+    return SizedBox(width: this);
+  }
 }
