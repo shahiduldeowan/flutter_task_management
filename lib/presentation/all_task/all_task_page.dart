@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import "package:flutter_bloc/flutter_bloc.dart";
+import "package:task/core/constants/app_sizes.dart";
 import "package:task/core/extensions/app_size_extension.dart";
 import "package:task/core/utils/app_localization_helper.dart";
 import "package:task/presentation/cubits/task/task_list_cubit.dart";
@@ -22,11 +23,12 @@ class AllTaskPage extends StatelessWidget {
           }
           if (state is TaskListLoaded && state.tasks?.isNotEmpty != null) {
             return ListView.separated(
-              padding: EdgeInsets.all(20.h),
+              padding: EdgeInsets.all(AppSizes.paddingXL.h),
               itemBuilder: (context, index) => BuildTaskCard(
                 task: state.tasks![index],
               ),
-              separatorBuilder: (context, index) => 8.h.toHeightBox(),
+              separatorBuilder: (context, index) =>
+                  AppSizes.spaceS.h.toHeightBox(),
               itemCount: state.tasks!.length,
             );
           }
