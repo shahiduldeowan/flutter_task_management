@@ -27,7 +27,7 @@ class MainPage extends StatelessWidget {
       canPop: false,
       onPopInvokedWithResult: (didPop, result) => exitDialog(context),
       child: Scaffold(
-        extendBody: true,
+        // extendBody: true,
         extendBodyBehindAppBar: true,
         body: Container(
           width: double.infinity,
