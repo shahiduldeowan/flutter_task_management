@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:task/core/constants/app_sizes.dart";
 import "package:task/core/extensions/app_size_extension.dart";
 import "package:task/core/theme/theme_helper.dart";
 import "package:task/core/utils/app_localization_helper.dart";
@@ -26,7 +27,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return CustomAppBarWidget(
       title: Padding(
-        padding: EdgeInsets.only(left: 20.h),
+        padding: EdgeInsets.only(left: AppSizes.paddingXL.h),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
