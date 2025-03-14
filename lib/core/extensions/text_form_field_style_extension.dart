@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:task/core/constants/app_sizes.dart";
 import "package:task/core/extensions/app_size_extension.dart";
 import "package:task/core/theme/app_decoration.dart";
 import "package:task/core/theme/theme_helper.dart";
@@ -19,7 +20,7 @@ extension TextFormFieldStyleExtension on BuildCustomTextFormField {
         hintText: hintText ?? "",
         hintStyle: hintStyle ?? theme.textTheme.bodySmall,
         isDense: true,
-        contentPadding: contentPadding ?? EdgeInsets.all(14.h),
+        contentPadding: contentPadding ?? EdgeInsets.all(AppSizes.paddingMM.h),
         fillColor: theme.colorScheme.primaryContainer,
         filled: true,
         border: outlineGray,
