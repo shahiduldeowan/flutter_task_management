@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import "package:flutter_bloc/flutter_bloc.dart";
+import "package:task/core/constants/app_sizes.dart";
 import "package:task/core/extensions/app_size_extension.dart";
 import "package:task/generated/assets.gen.dart";
 import "package:task/presentation/cubits/navigation/navigation_cubit.dart";
@@ -26,7 +27,7 @@ class BottomNavBarWidget extends StatelessWidget {
             padding: EdgeInsets.all(4.h),
             decoration: BoxDecoration(
               color: Theme.of(context).colorScheme.primaryContainer,
-              borderRadius: BorderRadius.circular(34.h),
+              borderRadius: BorderRadius.circular(AppSizes.borderRadiusXXXL.h),
               boxShadow: [
                 BoxShadow(
                   color: Theme.of(context).colorScheme.onPrimary.withValues(
