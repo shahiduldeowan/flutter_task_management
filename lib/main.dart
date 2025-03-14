@@ -6,8 +6,6 @@ import "package:task/core/di/locator.dart";
 import "package:task/data/models/task.dart";
 import "package:task/presentation/app.dart";
 
-var globalMessengerKey = GlobalKey<ScaffoldMessengerState>();
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter((await getApplicationDocumentsDirectory()).path);
