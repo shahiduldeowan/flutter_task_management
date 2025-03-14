@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:task/core/constants/app_sizes.dart";
 import "package:task/core/extensions/app_size_extension.dart";
 import "package:task/core/theme/app_decoration.dart";
 import "package:task/core/theme/theme_helper.dart";
@@ -14,7 +15,7 @@ class AnimatedTabBarWidget extends StatelessWidget {
     return Container(
       width: double.maxFinite,
       height: 40.h,
-      padding: EdgeInsets.all(6.h),
+      padding: EdgeInsets.all(AppSizes.paddingXS.h),
       decoration: AppDecoration.outlinedGrayBoxDecoration,
       child: ClipRRect(
         borderRadius: BorderRadiusStyles.roundedBorder20,
@@ -81,7 +82,7 @@ class AnimatedTab extends StatelessWidget {
             curve: Curves.easeInOut,
             height: double.maxFinite,
             alignment: Alignment.center,
-            margin: const EdgeInsets.symmetric(horizontal: 6.0),
+            margin: const EdgeInsets.symmetric(horizontal: AppSizes.paddingXS),
             child: Transform.scale(
               scale: scale,
               child: Text(text),
