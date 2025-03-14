@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:task/core/constants/app_sizes.dart";
 import "package:task/core/extensions/app_size_extension.dart";
 
 class EmptyWidget extends StatelessWidget {
@@ -15,7 +16,7 @@ class EmptyWidget extends StatelessWidget {
       child: Text(
         message,
         style: TextStyle(
-          fontSize: 12.fs,
+          fontSize: AppSizes.fontXS.fs,
           color: Colors.grey,
         ),
       ),
