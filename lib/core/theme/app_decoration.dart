@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:task/core/constants/app_sizes.dart";
 import "package:task/core/extensions/app_size_extension.dart";
 import "package:task/core/theme/theme_helper.dart" show appTheme, theme;
 import "package:task/generated/colors.gen.dart";
@@ -47,13 +48,18 @@ class AppDecoration {
 }
 
 class BorderRadiusStyles {
-  static BorderRadius get roundedBorder12 => BorderRadius.circular(12.h);
+  static BorderRadius get roundedBorder12 =>
+      BorderRadius.circular(AppSizes.borderRadiusM.h);
 
-  static BorderRadius get roundedBorder14 => BorderRadius.circular(14.h);
+  static BorderRadius get roundedBorder14 =>
+      BorderRadius.circular(AppSizes.borderRadiusMM.h);
 
-  static BorderRadius get roundedBorder16 => BorderRadius.circular(16.h);
+  static BorderRadius get roundedBorder16 =>
+      BorderRadius.circular(AppSizes.borderRadiusL.h);
 
-  static BorderRadius get roundedBorder20 => BorderRadius.circular(20.h);
+  static BorderRadius get roundedBorder20 =>
+      BorderRadius.circular(AppSizes.borderRadiusXL.h);
 
-  static BorderRadius get roundedBorder34 => BorderRadius.circular(34.h);
+  static BorderRadius get roundedBorder34 =>
+      BorderRadius.circular(AppSizes.borderRadiusXXXL.h);
 }
