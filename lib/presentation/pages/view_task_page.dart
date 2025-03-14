@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import "package:flutter_bloc/flutter_bloc.dart";
+import "package:task/core/constants/app_sizes.dart";
 import "package:task/core/di/locator.dart";
 import "package:task/core/extensions/app_size_extension.dart";
 import "package:task/core/utils/app_localization_helper.dart";
@@ -66,7 +67,7 @@ class _ViewTaskPageState extends State<ViewTaskPage> {
                 }
               },
               builder: (context, state) => Padding(
-                padding: EdgeInsets.only(right: 20.h),
+                padding: EdgeInsets.only(right: AppSizes.paddingXL.h),
                 child: TaskStatusButton(
                   task: widget.task,
                   isDeleteButton: true,
@@ -93,7 +94,7 @@ class _ViewTaskPageState extends State<ViewTaskPage> {
           },
           builder: (context, state) {
             return SingleChildScrollView(
-              padding: EdgeInsets.only(top: 24.h),
+              padding: EdgeInsets.only(top: AppSizes.paddingXL.h),
               child: Form(
                 key: _formKey,
                 child: BuildTaskForm(
