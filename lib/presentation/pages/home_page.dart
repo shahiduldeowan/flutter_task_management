@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import "package:flutter_bloc/flutter_bloc.dart";
+import "package:task/core/constants/app_sizes.dart";
 import "package:task/core/extensions/app_size_extension.dart";
 import "package:task/core/extensions/task_extension.dart";
 import "package:task/core/theme/theme_helper.dart";
@@ -23,7 +24,8 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   late final TabController _tabController;
-  static final EdgeInsets _padding = EdgeInsets.symmetric(horizontal: 20.h);
+  static final EdgeInsets _padding =
+      EdgeInsets.symmetric(horizontal: AppSizes.paddingXL.h);
 
   @override
   void initState() {
@@ -39,16 +41,16 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         headerSliverBuilder: (_, __) => [
           SliverToBoxAdapter(
             child: Padding(
-              padding: _padding.copyWith(top: 20.h),
+              padding: _padding.copyWith(top: AppSizes.paddingXL.h),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const BuildSummaryWidget(),
-                  20.h.toHeightBox(),
+                  AppSizes.spaceXL.h.toHeightBox(),
                   Text("todayTasks".tr(), style: theme.textTheme.titleLarge),
                   2.h.toHeightBox(),
                   AnimatedTabBarWidget(controller: _tabController),
-                  12.h.toHeightBox(),
+                  AppSizes.spaceM.h.toHeightBox(),
                 ],
               ),
             ),
@@ -91,7 +93,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   PreferredSizeWidget _buildAppBar() {
     return CustomAppBarWidget(
       title: Padding(
-        padding: EdgeInsets.only(left: 20.h),
+        padding: EdgeInsets.only(left: AppSizes.paddingXL.h),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
