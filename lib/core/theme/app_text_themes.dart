@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:task/core/constants/app_sizes.dart";
 import "package:task/core/extensions/app_size_extension.dart";
 import "package:task/core/theme/theme_helper.dart";
 import "package:task/generated/fonts.gen.dart";
@@ -19,7 +20,7 @@ class AppTextThemes {
         ),
         bodySmall: TextStyle(
           color: appTheme.slateGray,
-          fontSize: 12.fs,
+          fontSize: AppSizes.fontXS.fs,
           fontFamily: FontFamily.poppins,
           fontWeight: FontWeight.w400,
         ),
@@ -37,13 +38,13 @@ class AppTextThemes {
         ),
         headlineSmall: TextStyle(
           color: appTheme.darkBlack,
-          fontSize: 24.fs,
+          fontSize: AppSizes.fontXL.fs,
           fontFamily: FontFamily.poppins,
           fontWeight: FontWeight.w800,
         ),
         labelLarge: TextStyle(
           color: appTheme.darkBlack,
-          fontSize: 12.fs,
+          fontSize: AppSizes.fontXS,
           fontFamily: FontFamily.poppins,
           fontWeight: FontWeight.w500,
         ),
