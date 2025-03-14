@@ -23,7 +23,10 @@ class BottomNavBarWidget extends StatelessWidget {
         return SafeArea(
           child: AnimatedContainer(
             duration: const Duration(milliseconds: 200),
-            margin: EdgeInsets.symmetric(horizontal: 20.h, vertical: 14.h),
+            margin: EdgeInsets.symmetric(
+              horizontal: AppSizes.paddingXL.h,
+              vertical: AppSizes.paddingMM.h,
+            ),
             padding: EdgeInsets.all(4.h),
             decoration: BoxDecoration(
               color: Theme.of(context).colorScheme.primaryContainer,
