@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import "package:flutter_svg/flutter_svg.dart";
+import "package:task/core/constants/app_sizes.dart";
 import "package:task/core/extensions/app_size_extension.dart";
 import "package:task/core/theme/app_decoration.dart";
 import "package:task/core/theme/theme_helper.dart";
@@ -30,7 +31,8 @@ class BuildTaskForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.maxFinite,
-      padding: EdgeInsets.symmetric(horizontal: 20.h, vertical: 24.h),
+      padding: EdgeInsets.symmetric(
+          horizontal: AppSizes.paddingXL.h, vertical: AppSizes.paddingXXL.h),
       decoration: AppDecoration.filledPrimaryContainerBoxDecoration,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -58,7 +60,7 @@ class BuildTaskForm extends StatelessWidget {
         onPressed: onTaskCreated,
         style: ElevatedButton.styleFrom(
           elevation: 0,
-          padding: EdgeInsets.symmetric(vertical: 16.h),
+          padding: EdgeInsets.symmetric(vertical: AppSizes.paddingL.h),
           backgroundColor: theme.colorScheme.primary,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadiusStyles.roundedBorder34,
@@ -127,7 +129,8 @@ class BuildTaskForm extends StatelessWidget {
     return BuildCustomTextFormField(
       controller: taskNameController,
       hintText: "enterYourTaskName".tr(),
-      contentPadding: EdgeInsets.symmetric(vertical: 14.h, horizontal: 16.h),
+      contentPadding: EdgeInsets.symmetric(
+          vertical: AppSizes.paddingMM.h, horizontal: AppSizes.paddingL.h),
       validator: (value) => value == null || value.isEmpty
           ? "Please enter your task name!"
           : null,
