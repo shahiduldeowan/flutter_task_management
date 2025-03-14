@@ -15,7 +15,7 @@ class TaskUpdateCubit extends Cubit<TaskUpdateState> {
 
   Future<void> updateTask(TaskEntity task) async {
     emit(TaskUpdateLoading());
-    final result = await _updateTaskUseCase(task);
+    final result = await _updateTaskUseCase(param: task);
     result.fold(
       (failure) => emit(TaskUpdateFailed(message: failure.errorMessage)),
       (_) => emit(TaskUpdateSuccess(message: "taskUpdatedSuccessfully".tr())),

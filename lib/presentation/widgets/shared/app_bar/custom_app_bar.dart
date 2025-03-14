@@ -28,7 +28,6 @@ class CustomAppBarWidget extends StatelessWidget
         elevation: 0,
         shape: shape,
         toolbarHeight: height ?? 56.h,
-        automaticallyImplyLeading: false,
         backgroundColor: Colors.transparent,
         leadingWidth: leadingWidth ?? 0,
         leading: leading,
@@ -36,6 +35,7 @@ class CustomAppBarWidget extends StatelessWidget
         titleSpacing: 0,
         centerTitle: centerTitle ?? false,
         actions: actions,
+        automaticallyImplyLeading: false,
       );
 
   @override

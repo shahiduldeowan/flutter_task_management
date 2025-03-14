@@ -69,5 +69,49 @@
     "exit": "Exit",
     "@exit": {
         "description": "Exit button label."
+    },
+    "createNewTask": "Create new task",
+    "@createNewTask": {
+        "description": "Create new task title"
+    },
+    "taskName": "Task Name",
+    "@taskName": {
+        "description": "Task input label"
+    },
+    "enterYourTaskName": "Enter Your Task Name",
+    "@enterYourTaskName": {
+        "description": "Task name input field hint"
+    },
+    "taskDescription": "Task description",
+    "@taskDescription": {
+        "description": "Task description input label"
+    },
+    "startDate": "Start Date",
+    "@startDate": {
+        "description": "Start date label"
+    },
+    "endDate": "End Date",
+    "@endDate": {
+        "description": "End date label"
+    },
+    "complete": "Complete",
+    "@complete": {
+        "description": "Complete button label"
+    },
+    "todo": "Todo",
+    "@todo": {
+        "description": "Todo button label"
+    },
+    "viewTask": "View Task",
+    "@viewTask": {
+        "description": "View task title"
+    },
+    "delete": "Delete",
+    "@delete": {
+        "description": "Delete button label"
+    },
+    "createNew": "Create New",
+    "@createNew": {
+        "description": "Create new label"
     }
 }

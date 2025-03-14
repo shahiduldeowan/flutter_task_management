@@ -13,28 +13,30 @@ class TaskRepoImpl implements TaskRepo {
   final TaskLocalDataSource _taskLocalDataSource;
 
   @override
-  ResultVoid addTask(TaskEntity task) async {
-    return _handleErrors(() => _taskLocalDataSource.addTask(task));
-  }
-
-  @override
-  ResultVoid deleteTask(String id) async {
-    return _handleErrors(() => _taskLocalDataSource.deleteTask(id));
-  }
-
-  @override
   ResultFuture<List<TaskEntity>> getTasks() async {
-    return _handleErrors(() => _taskLocalDataSource.getTasks());
+    return _handleErrors(() async => await _taskLocalDataSource.getTasks());
   }
 
   @override
-  ResultVoid updateTask(TaskEntity task) async {
-    return _handleErrors(() => _taskLocalDataSource.updateTask(task));
+  ResultFuture<String> addTask(TaskEntity task) async {
+    return _handleErrors(() async => await _taskLocalDataSource.addTask(task));
+  }
+
+  @override
+  ResultFuture<String> updateTask(TaskEntity task) async {
+    return _handleErrors(
+        () async => await _taskLocalDataSource.updateTask(task));
+  }
+
+  @override
+  ResultFuture<String> deleteTask(String id) async {
+    return _handleErrors(() async => await _taskLocalDataSource.deleteTask(id));
   }
 
   /// Centralized error handling for local data source operations.
   Future<Either<Failure, T>> _handleErrors<T>(
-      Future<T> Function() operation) async {
+    Future<T> Function() operation,
+  ) async {
     try {
       final result = await operation();
       return Right(result);

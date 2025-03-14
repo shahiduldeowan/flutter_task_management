@@ -15,7 +15,7 @@ class TaskAddCubit extends Cubit<TaskAddState> {
 
   Future<void> addTask(TaskEntity task) async {
     emit(TaskAddLoading());
-    final result = await _addTaskUseCase(task);
+    final result = await _addTaskUseCase(param: task);
     result.fold(
       (failure) => emit(TaskAddFailed(message: failure.errorMessage)),
       (_) => emit(TaskAddSuccess(message: "taskAddedSuccessfully".tr())),

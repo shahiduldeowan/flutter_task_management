@@ -13,7 +13,7 @@ class TaskDeleteCubit extends Cubit<TaskDeleteState> {
 
   Future<void> deleteTask(String id) async {
     emit(TaskDeleteLoading());
-    final result = await _deleteTaskUseCase(id);
+    final result = await _deleteTaskUseCase(param: id);
     result.fold(
       (message) => emit(TaskDeleteFailed(message: message.errorMessage)),
       (_) => emit(const TaskDeleteSuccess()),

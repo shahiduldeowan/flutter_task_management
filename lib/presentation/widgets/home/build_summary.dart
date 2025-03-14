@@ -1,8 +1,11 @@
 import "package:flutter/material.dart";
+import "package:flutter_bloc/flutter_bloc.dart";
 import "package:task/core/extensions/app_size_extension.dart";
+import "package:task/core/extensions/task_extension.dart";
 import "package:task/core/theme/app_decoration.dart";
 import "package:task/core/theme/theme_helper.dart" show appTheme, theme;
 import "package:task/core/utils/app_localization_helper.dart";
+import "package:task/presentation/cubits/task/task_list_cubit.dart";
 
 class BuildSummaryWidget extends StatelessWidget {
   const BuildSummaryWidget({super.key});
@@ -27,24 +30,37 @@ class BuildSummaryWidget extends StatelessWidget {
   }
 
   Widget _buildTaskStats() {
-    return SizedBox(
-      width: double.maxFinite,
-      child: Row(
-        children: [
-          _buildTaskCard(
-            label: "assignedTasks".tr(),
-            count: "21",
-            backgroundColor: AppDecoration.primary50,
-            textColor: theme.colorScheme.primary,
+    return BlocBuilder<TaskListCubit, TaskListState>(
+      builder: (context, state) {
+        int assignedTask = 0;
+        int completedTask = 0;
+
+        if (state is TaskListLoaded && state.tasks != null) {
+          var summary = state.tasks!.getSummary();
+          assignedTask = summary.assignedTask;
+          completedTask = summary.completedTask;
+        }
+
+        return SizedBox(
+          width: double.maxFinite,
+          child: Row(
+            children: [
+              _buildTaskCard(
+                label: "assignedTasks".tr(),
+                count: "$assignedTask",
+                backgroundColor: AppDecoration.primary50,
+                textColor: theme.colorScheme.primary,
+              ),
+              _buildTaskCard(
+                label: "completedTasks".tr(),
+                count: "$completedTask",
+                backgroundColor: AppDecoration.green50,
+                textColor: appTheme.green,
+              ),
+            ],
           ),
-          _buildTaskCard(
-            label: "completedTasks".tr(),
-            count: "31",
-            backgroundColor: AppDecoration.green50,
-            textColor: appTheme.green,
-          ),
-        ],
-      ),
+        );
+      },
     );
   }
 

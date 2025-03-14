@@ -35,19 +35,12 @@ class MainPage extends StatelessWidget {
           decoration: AppDecoration.gradientBackground,
           child: BlocBuilder<NavigationCubit, NavigationState>(
             builder: (context, state) {
-              return AnimatedSwitcher(
-                duration: const Duration(milliseconds: 500),
-                transitionBuilder: (child, animation) => FadeTransition(
-                  opacity: animation,
-                  child: child,
-                ),
-                child: PageStorage(
-                  bucket: _pageStorageBucket,
-                  child: IndexedStack(
-                    key: ValueKey<int>(state.selectedIndex),
-                    index: state.selectedIndex,
-                    children: _pages,
-                  ),
+              return PageStorage(
+                bucket: _pageStorageBucket,
+                child: IndexedStack(
+                  // key: ValueKey<int>(state.selectedIndex),
+                  index: state.selectedIndex,
+                  children: _pages,
                 ),
               );
             },

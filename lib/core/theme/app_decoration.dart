@@ -19,9 +19,14 @@ class AppDecoration {
         color: theme.colorScheme.primaryContainer,
         borderRadius: BorderRadiusStyles.roundedBorder20,
         border: Border.all(
-          color: const Color(0xFFDCE1EF),
+          color: appTheme.appBorderGay,
           width: 1.h,
         ),
+      );
+
+  static BoxDecoration get filledPrimaryContainerBoxDecoration => BoxDecoration(
+        color: theme.colorScheme.primaryContainer,
+        borderRadius: BorderRadiusStyles.roundedBorder16,
       );
 
   static BoxDecoration get primary50 => BoxDecoration(
@@ -46,5 +51,9 @@ class BorderRadiusStyles {
 
   static BorderRadius get roundedBorder14 => BorderRadius.circular(14.h);
 
+  static BorderRadius get roundedBorder16 => BorderRadius.circular(16.h);
+
   static BorderRadius get roundedBorder20 => BorderRadius.circular(20.h);
+
+  static BorderRadius get roundedBorder34 => BorderRadius.circular(34.h);
 }

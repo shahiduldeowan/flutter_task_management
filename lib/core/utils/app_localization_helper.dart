@@ -24,8 +24,18 @@ extension AppLocalizationHelperExt on String {
       "taskAddedSuccessfully" => localization?.taskAddedSuccessfully ?? this,
       "taskUpdatedSuccessfully" =>
         localization?.taskUpdatedSuccessfully ?? this,
-      // "taskDeletedSuccessfully" =>
-      //   localization?.taskDeletedSuccessfully ?? this,
+      "taskDeletedSuccessfully" =>
+        localization?.taskDeletedSuccessfully ?? this,
+      "createNewTask" => localization?.createNewTask ?? this,
+      "taskName" => localization?.taskName ?? this,
+      "enterYourTaskName" => localization?.enterYourTaskName ?? this,
+      "taskDescription" => localization?.taskDescription ?? this,
+      "startDate" => localization?.startDate ?? this,
+      "endDate" => localization?.endDate ?? this,
+      "todo" => localization?.todo ?? this,
+      "complete" => localization?.complete ?? this,
+      "viewTask" => localization?.viewTask ?? this,
+      "delete" => localization?.delete ?? this,
       _ => this,
     };
   }

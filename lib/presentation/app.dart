@@ -26,6 +26,10 @@ class App extends StatelessWidget {
             BlocProvider<TaskListCubit>(
               create: (tasklistContext) => sl<TaskListCubit>()..getTasks(),
             ),
+            // BlocProvider<GenericCubit>(
+            //   create: (tasklistContext) => sl<GenericCubit>()
+            //     ..manageData<List<TaskEntity>>(sl<GetTasksUseCase>()),
+            // ),
           ],
           child: MaterialApp(
             title: "Task Management",

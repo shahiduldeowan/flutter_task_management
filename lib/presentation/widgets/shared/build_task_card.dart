@@ -4,10 +4,13 @@ import "package:task/core/extensions/app_size_extension.dart";
 import "package:task/core/theme/app_decoration.dart";
 import "package:task/core/theme/theme_helper.dart";
 import "package:task/core/utils/date_formatter.dart";
+import "package:task/domain/entity/task.dart";
 import "package:task/generated/assets.gen.dart";
+import "package:task/presentation/widgets/shared/task_status_button.dart";
 
 class BuildTaskCard extends StatelessWidget {
-  const BuildTaskCard({super.key});
+  const BuildTaskCard({super.key, required this.task});
+  final TaskEntity task;
 
   @override
   Widget build(BuildContext context) {
@@ -20,9 +23,9 @@ class BuildTaskCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Homepage Redesign", style: theme.textTheme.titleMedium),
+          Text(task.title, style: theme.textTheme.titleMedium),
           Text(
-            "Redesign the homepage of our website to improve user engagement and align with our updated bran",
+            task.description,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             style: theme.textTheme.bodySmall!.copyWith(height: 1.4),
@@ -30,8 +33,8 @@ class BuildTaskCard extends StatelessWidget {
           8.h.toHeightBox(),
           Row(
             children: [
-              _TaskDate(date: DateTime.now()),
-              const _TaskStatusButton(status: "Todo"),
+              _TaskDate(date: task.startDate),
+              TaskStatusButton(task: task),
             ],
           ),
         ],
@@ -50,42 +53,17 @@ class _TaskDate extends StatelessWidget {
     return Expanded(
       child: Row(
         children: [
-          SvgPicture.asset(AppAssets.svg.clockIcon.path,
-              height: 12.h, width: 12.h),
+          SvgPicture.asset(
+            AppAssets.svg.clockIcon.path,
+            height: 12.h,
+            width: 12.h,
+          ),
           4.h.toWidthBox(),
           Text(
             DateFormatter.formatDateWithMonthDayYear(date),
             style: theme.textTheme.bodySmall!.copyWith(fontSize: 10.fs),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class _TaskStatusButton extends StatelessWidget {
-  final String status;
-
-  const _TaskStatusButton({required this.status});
-
-  @override
-  Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: () {}, // TODO: Implement action
-      style: ElevatedButton.styleFrom(
-        elevation: 0,
-        padding: EdgeInsets.symmetric(horizontal: 10.h, vertical: 6.h),
-        backgroundColor: const Color(0xFFF0EDFD),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadiusStyles.roundedBorder20,
-        ),
-      ),
-      child: Text(
-        status,
-        style: theme.textTheme.labelLarge!.copyWith(
-          color: theme.colorScheme.primary,
-          fontWeight: FontWeight.w600,
-        ),
       ),
     );
   }
