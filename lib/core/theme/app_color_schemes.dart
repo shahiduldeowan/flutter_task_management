@@ -22,4 +22,6 @@ class LightCodeColors {
   Color get error => AppColors.errorColor;
 
   Color get iceGray => AppColors.iceGray;
+
+  Color get appBorderGay => const Color(0xFFDCE1EF);
 }
