@@ -75,7 +75,7 @@ lib/
 
 ## 📲 Download APK
 
-🔗 **[Download APK From Google Drive](https://drive.usercontent.google.com/download?id=1vQB2N97YRRQcAr2eGWvewp7CtBmnz8w1&export=download&confirm=t&uuid=74f0bda2-529d-42d3-9dea-45c524315b7b)** <!-- Replace with your actual APK link -->
+🔗 **[Download APK From Google Drive](https://drive.usercontent.google.com/download?id=1kQAhdZ61vplDYpJmZo2HkX19HyddkD1A&export=download&authuser=0&confirm=t&uuid=eeaec4c1-c7bd-4cb6-9818-12edd06a48f2&at=AEz70l7ufZU3uC_CA-rI0UvHNx6Z:1741960704809)** <!-- Replace with your actual APK link -->
 
 ---
 
