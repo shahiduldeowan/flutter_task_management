@@ -1,16 +1,39 @@
-# task
+# 📝 Task Management App
 
-A new Flutter project.
+A beautifully designed **Task Management** application built with **Flutter**. This app helps users manage their daily tasks efficiently with an intuitive UI and smooth interactions.
 
-## Getting Started
+![App Screenshot](https://your-image-link.com) <!-- Replace with actual image link -->
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+✅ **Task Management** – Create, View, Edit, and Delete tasks  
+✅ **Task Categories** – Organize tasks into different statuses (To-do, Completed)  
+✅ **Calendar View** – Visual representation of tasks by date  
+✅ **Local Storage** – Save and retrieve tasks using Hive database  
+✅ **State Management** – Powered by `flutter_bloc` for a seamless experience  
+✅ **Beautiful UI** – Built with **Flutter**, `flutter_svg`, and `Poppins` font  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📸 Screenshots
+
+| Task List | Task Details | Create Task | Summary |
+|-----------|-------------|-------------|---------|
+| ![Task List](https://your-image-link.com) | ![Task Details](https://your-image-link.com) | ![Create Task](https://your-image-link.com) | ![Summary](https://your-image-link.com) |
+
+---
+
+## 📲 Download APK
+
+🔗 **[Download APK](https://drive.google.com/your-apk-link)** <!-- Replace with your actual APK link -->
+
+---
+
+## 🛠 Installation & Setup
+
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/your-repo/task-management-app.git
+cd task-management-app
